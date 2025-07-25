@@ -1,4 +1,9 @@
 from dotenv import load_dotenv
+import sys
+import pysqlite3
+
+sys.modules["sqlite3"] = pysqlite3
+
 from crew import research_crew
 
 load_dotenv()
