@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 from crewai import Agent, LLM
-from crewai_tools import FileReadTool
+
 
 
 # LLM configurations - Agent specific config
@@ -23,6 +23,5 @@ data_analyst_agent = Agent(
                 "and key findings from research data."
             ),
     llm=llm,
-    tools=[FileReadTool()],
     verbose=True,
 )

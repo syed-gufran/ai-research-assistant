@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 from crewai import Agent, LLM
-from crewai_tools import FileWriterTool
+
 
 
 # LLM configurations - Agent specific config
@@ -23,6 +23,5 @@ content_writer_agent = Agent(
                 "information into accessible and compelling content."
             ),
     llm=llm,
-    tools=[FileWriterTool()],
     verbose=True,
 )
