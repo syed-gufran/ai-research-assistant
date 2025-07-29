@@ -3,3 +3,6 @@ crewai-tools
 python-dotenv
 streamlit
 pysqlite3-binary>=0.5.1
+fastapi
+uvicorn
+requests
