@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 from crewai import Agent, LLM
-from crewai_tools import SerperDevTool
+
 
 
 # LLM configurations - Agent specific config
@@ -23,6 +23,6 @@ research_specialist_agent = Agent(
                 "most relevant and up-to-date information on any topic."
             ),
     llm=llm,
-    tools=[SerperDevTool()],
+    
     verbose=True,
 )
